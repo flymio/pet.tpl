@@ -1,0 +1,39 @@
+.social {
+  overflow: hidden;
+  &__list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    margin: 0 -28px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__item {
+    flex: 0 0 auto;
+    padding: 5px 28px 5px 0;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+  &__icon {
+    fill: $color-black;
+    &_facebook {
+      width: 23px;
+      height: 23px;
+    }
+    &_vk {
+      width: 27px;
+      height: 15px;
+    }
+    &_instagram {
+      width: 23px;
+      height: 23px;
+    }
+  }
+  &__link:hover &__icon,
+  &__link:active &__icon {
+    fill: $color-green;
+  }
+}

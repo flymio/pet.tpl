@@ -1,0 +1,79 @@
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(217, 217, 217, 0.15);
+  backdrop-filter: blur(15px);
+  width: 100%;
+  z-index: 100;
+  &__cover {
+    display: flex;
+    align-items: center;
+    height: 120px;
+  }
+  &__logo {
+    flex: 0 0 auto;
+  }
+  &__logo-icon {
+    fill: $color-white;
+    width: 75px;
+    height: 75px;
+  }
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: -48px;
+  }
+  &__nav {
+    flex: 1 1 auto;
+    padding: 0 48px;
+  }
+  &__nav-list {
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-end;
+    }
+  }
+  &__nav-link {
+    color: $color-white;
+  }
+  &__social {
+    padding-right: 48px;
+    flex: 0 0 auto;
+  }
+  &__social-list {
+    margin: 0 0 0 -28px;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+  }
+  &__social-item {
+    padding-right: 0;
+    padding-left: 28px;
+  }
+  &__social-icon {
+    fill: $color-white;
+  }
+  &__sub-nav {
+    flex: 0 0 auto;
+    margin-right: 48px;
+  }
+  &__sub-nav-button {
+    div {
+      background: $color-white;
+    }
+  }
+  &__phone {
+    margin-right: 48px;
+    flex: 0 0 auto;
+  }
+  &__phone-link {
+    color: $color-white;
+  }
+  &__phone-icon {
+    fill: $color-white;
+  }
+}

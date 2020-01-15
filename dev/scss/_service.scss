@@ -1,0 +1,49 @@
+.service {
+  display: flex;
+  background: #E8E9EA;
+  border-radius: 7px;
+  overflow: hidden;
+  min-height: 75px;
+  padding: 5px 18px;
+  text-decoration: none;
+  width: 100%;
+  flex: 0 0 auto;
+  align-items: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: $bold;
+  color: #353535;
+  &:hover,
+  &:active {
+    color: $color-green;
+  }
+  &__icon-block {
+    flex: 0 0 auto;
+    margin-right: 18px;
+    width: 43px;
+  }
+  &__icon {
+    margin: 0 auto;
+    fill: #353535;
+  }
+  &:hover &__icon,
+  &:active &__icon {
+    fill: $color-green;
+  }
+  &__name {
+    flex: 1 1 auto;
+  }
+  &__arrow {
+    display: inline-block;
+    width: 9px;
+    height: 15px;
+    fill: #353535;
+    position: relative;
+    top: 3px;
+    right: -2px;
+  }
+  &:hover &__arrow,
+  &:active &__arrow {
+    fill: $color-green;
+  }
+}

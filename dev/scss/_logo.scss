@@ -1,0 +1,9 @@
+.logo {
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+  &__icon {
+    fill: $color-black;
+  }
+}

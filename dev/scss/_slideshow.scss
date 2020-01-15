@@ -1,0 +1,39 @@
+.slideshow {
+  width: 100%;
+  position: relative;
+  display: none;
+  z-index: 2;
+  &__slide {
+    display: block!important;
+  }
+  &__slide-cover {
+    padding-top: 205px;
+    padding-bottom: 315px;
+  }
+  &__slide-title {
+    font: $extrabold 75px / 91px 'Montserrat', sans-serif;
+    color: $color-white;
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  &__slide-description {
+    max-width: 530px;
+    margin: 68px auto 0;
+    text-align: center;
+    font: $semibold 30px / 37px 'Montserrat', sans-serif;
+    color: $color-white;
+  }
+  .slick-dots {
+    position: absolute;
+    left: 0;
+    bottom: 250px;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    padding: 0 11px;
+    button {
+      background: rgba(0, 169, 154, 0.4);
+    }
+  }
+}

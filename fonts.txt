@@ -1,0 +1,15 @@
+Helvetica Cyrillic Regular
+Helvetica Cyrillic Bold
+
+Montserrat Regular
+Montserrat Medium
+Montserrat Semibold
+Montserrat Extrabold
+
+Lato Regular
+Lato Bold
+
+Roboto Regular
+
+PT Sans Regular
+PT Sans Bold

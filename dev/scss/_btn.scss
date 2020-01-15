@@ -1,0 +1,22 @@
+.btn {
+  display: inline-block;
+  padding: 13px 30px;
+  min-width: 300px;
+  text-align: center;
+  color: $color-white;
+  border: 1px solid $color-green;
+  background: $color-green;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  font-size: 24px;
+  line-height: normal;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: $bold;
+  &:hover,
+  &:active {
+    color: $color-green;
+    background: none;
+  }
+}
