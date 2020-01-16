@@ -1,5 +1,21 @@
 .about {
   &__cover {
     padding-top: 50px;
+    padding-bottom: 65px;
+  }
+  &__carousel {
+    overflow: hidden;
+  }
+  &__list {
+    position: relative;
+    margin: 0 -15px;
+    display: none;
+  }
+  &__slide {
+    display: block!important;
+    padding: 0 15px;
+  }
+  .slick-dots {
+    padding-top: 31px;
   }
 }

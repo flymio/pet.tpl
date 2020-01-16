@@ -1,0 +1,69 @@
+.experts {
+  &__cover {
+    padding-top: 70px;
+    padding-bottom: 120px;
+  }
+  &__title {
+    margin: 0 0 43px;
+    text-transform: uppercase;
+    font: $bold 28px $font;
+    color: #353535;
+  }
+  &__carousel {
+    position: relative;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &__content {
+    overflow: hidden;
+  }
+  &__list {
+    position: relative;
+    margin: 0 -15px;
+    display: none;
+  }
+  &__item {
+    display: block!important;
+  }
+  &__item-link {
+    display: block;
+    text-align: center;
+    padding: 0 15px;
+    text-decoration: none;
+  }
+  &__item-img-block {
+    margin: 0 auto 15px;
+    width: 180px;
+  }
+  &__item-img {
+    max-width: none;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+  }
+  &__item-name {
+    font: $regular 24px / 29px $font;
+    color: $color-black;
+    max-width: 200px;
+    margin: 0 auto 9px;
+  }
+  &__item-link:hover &__item-name {
+    color: $color-green;
+  }
+  &__item-status {
+    font: $regular 17px $font;
+    color: $color-black;
+  }
+  .slick-dots {
+    padding-top: 31px;
+  }
+  .slick-arrow {
+    width: 20px;
+    height: 38px;
+    top: 71px;
+    margin-top: 0;
+    svg {
+      fill: $color-green;
+    }
+  }
+}

@@ -10,6 +10,7 @@ Lato Regular
 Lato Bold
 
 Roboto Regular
+Roboto Black
 
 PT Sans Regular
 PT Sans Bold
