@@ -1,19 +1,36 @@
 .carousel-services {
   position: relative;
-  padding: 0 40px;
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
   @media screen and (min-width: 1200px) {
     margin: 0 -40px;
   }
   &__wrapper {
-    overflow: hidden;
+    @media screen and (min-width: 768px) {
+      overflow: hidden;
+    }
   }
   &__list {
     position: relative;
     display: none;
-    margin: 0 -13px;
+    @media screen and (min-width: 768px) {
+      margin: 0 -13px;
+    }
+  }
+  .slick-list {
+    @media screen and (max-width: 767px) {
+      transform: none!important;
+      overflow: visible!important;
+    }
   }
   .slick-track {
     display: flex;
+    @media screen and (max-width: 767px) {
+      width: auto!important;
+      flex-wrap: wrap!important;
+      transform: none!important;
+    }
     &:before,
     &:after {
       display: none;
@@ -23,17 +40,34 @@
     float: none;
     display: flex;
     flex: 0 0 auto;
+    @media screen and (max-width: 767px) {
+      width: 100%!important;
+      display: none!important;
+      margin-top: 15px!important;
+    }
+    &:nth-child(-n+3) {
+      @media screen and (max-width: 767px) {
+        display: flex!important;
+      }
+    }
     & > div {
       flex: 0 0 auto;
       display: flex;
       width: 100%;
     }
   }
+  .slick-cloned {
+    @media screen and (max-width: 767px) {
+      display: none!important;
+    }
+  }
   &__item {
     flex: 0 0 auto;
     width: 100%;
     display: flex!important;
-    padding: 0 15px;
+    @media screen and (min-width: 768px) {
+      padding: 0 15px;
+    }
   }
   .slick-arrow {
     svg {

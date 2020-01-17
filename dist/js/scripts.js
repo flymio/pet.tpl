@@ -1,6 +1,14 @@
 'use strict';
 
 $(function () {
+  // Поддержка svg спрайтов в IE11
+  svg4everybody();
+  
+  // Меню
+  $('#pull').on('click', function() {
+    $('#sub-nav').stop(true, true).slideToggle(300);
+  });
+
   // Слаидер на главной странице
   $('#slideshow').slick({
     dots: true,
@@ -29,9 +37,16 @@ $(function () {
     appendArrows: '#carousel-services',
     responsive: [
       {
-        breakpoint: 1200,
+        breakpoint: 990,
         settings: {
-          
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          infinite: false
         }
       }
     ]
@@ -111,6 +126,15 @@ $(function () {
           arrows: false,
           dots: true
         }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }
     ]
   });
@@ -126,9 +150,24 @@ $(function () {
     appendDots: '#experts-carousel',
     responsive: [
       {
-        breakpoint: 1360,
+        breakpoint: 990,
         settings: {
-          
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: false,
+          variableWidth: true
         }
       }
     ]

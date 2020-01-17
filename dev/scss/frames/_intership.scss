@@ -1,13 +1,21 @@
 .internship {
   &__cover {
-    padding-top: 48px;
+    padding-top: 15px;
     padding-bottom: 50px;
+    @media screen and (min-width: 600px) {
+      padding-top: 48px;
+    }
   }
   &__title {
-    font: $regular 30px / 36px $font;
+    font: $regular 20px / 24px $font;
     color: $color-black;
-    margin: 0 0 52px;
+    margin: 0 0 32px;
     text-align: center;
+    @media screen and (min-width: 600px) {
+      font-size: 30px;
+      line-height: 36px;
+      margin: 0 0 52px;
+    }
   }
   &__content {
     overflow: hidden;
@@ -20,9 +28,12 @@
   }
   &__item {
     flex: 0 0 auto;
-    width: (100% / 3);
+    width: 100%;
     padding: 0 0 50px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      width: (100% / 3);
+    }
   }
   &__link {
     display: block;
@@ -37,7 +48,10 @@
   &__icon-block {
     height: 104px;
     position: relative;
-    margin: 0 0 36px;
+    margin: 0 0 17px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 36px;
+    }
   }
   &__icon {
     position: absolute;
@@ -57,8 +71,12 @@
   }
   &__name {
     margin: 0;
-    font: $regular 23px / 28px $font;
+    font: $regular 20px $font;
     color: $color-black;
+    @media screen and (min-width: 990px) {
+      font-size: 23px;
+      line-height: 28px;
+    }
   }
   &__link:hover &__name,
   &__link:active &__name {
@@ -66,6 +84,8 @@
   }
   &__button-block {
     text-align: center;
-    padding-top: 10px;
+    @media screen and (min-width: 600px) {
+      padding-top: 10px;
+    }
   }
 }

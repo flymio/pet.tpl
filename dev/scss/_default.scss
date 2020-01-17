@@ -10,9 +10,13 @@ body {
   height: 100%;
 }
 body {
-  font: $regular 19px / 23px $font;
+  font: $regular 15px / 18px $font;
   color: $color-black;
   background: $color-white;
+  @media screen and (min-width: 600px) {
+    font-size: 19px;
+    line-height: 23px;
+  }
 }
 a {
   color: $color-green;
@@ -23,7 +27,10 @@ a {
   }
 }
 p {
-  margin: 0 0 24px;
+  margin: 0 0 16px;
+  @media screen and (min-width: 600px) {
+    margin: 0 0 24px;
+  }
 }
 img {
   display: block;
@@ -52,39 +59,66 @@ h6,
   }
   line-height: normal;
   color: $color-black;
-  margin: 0 0 24px;
+  margin: 0 0 16px;
+  @media screen and (min-width: 600px) {
+    margin: 0 0 24px;
+  }
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 26px;
+  @media screen and (min-width: 600px) {
+    font-size: 36px;
+  }
 }
 h2,
 .h2 {
-  font-size: 32px;
+  font-size: 22px;
+  @media screen and (min-width: 600px) {
+    font-size: 32px;
+  }
 }
 h3,
 .h3 {
-  font-size: 27px;
+  font-size: 17px;
+  @media screen and (min-width: 600px) {
+    font-size: 27px;
+  }
 }
 h4,
 .h4 {
-  font-size: 24px;
+  font-size: 15px;
+  @media screen and (min-width: 600px) {
+    font-size: 24px;
+  }
 }
 h5,
 .h5 {
-  font-size: 22px;
+  font-size: 15px;
+  @media screen and (min-width: 600px) {
+    font-size: 22px;
+  }
 }
 h6,
 .h6 {
-  font-size: 19px;
+  font-size: 15px;
+  @media screen and (min-width: 600px) {
+    font-size: 19px;
+  }
 }
 ul,
 ol {
-  margin: 0 0 24px;
+  margin: 0 0 16px;
+  @media screen and (min-width: 600px) {
+    margin: 0 0 24px;
+  }
 }
 q {
   display: block;
-  margin: 0 0 24px;
+  margin: 0 0 16px;
+  @media screen and (min-width: 600px) {
+    margin: 0 0 24px;
+  }
 }
 svg {
   display: block;
@@ -122,7 +156,15 @@ input::-ms-clear {
   position: relative;
   margin: 0 auto;
   min-width: 320px;
-  max-width: 970px;
+  @media screen and (min-width: 600px) {
+    max-width: 570px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 740px;
+  }
+  @media screen and (min-width: 990px) {
+    max-width: 970px;
+  }
   @media screen and (min-width: 1200px) {
     max-width: 1110px;
   }
@@ -145,13 +187,19 @@ input::-ms-clear {
 .slick-dots {
   list-style: none;
   padding: 0;
-  margin: 0 -4px;
+  margin: 0 -2px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @media screen and (min-width: 600px) {
+    margin: 0 -4px;
+  }
   li {
     flex: 0 0 auto;
-    padding: 4px;
+    padding: 2px;
+    @media screen and (min-width: 600px) {
+      padding: 4px;
+    }
     &.slick-active {
       button {
         background: $color-green!important;
@@ -160,8 +208,8 @@ input::-ms-clear {
   }
   button {
     display: block;
-    width: 13px;
-    height: 13px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     padding: 0;
     border: none;
@@ -169,6 +217,10 @@ input::-ms-clear {
     outline: none;
     font-size: 0;
     background: #DCDCDC;
+    @media screen and (min-width: 600px) {
+      width: 13px;
+      height: 13px;
+    }
   }
 }
 .slick-arrow {

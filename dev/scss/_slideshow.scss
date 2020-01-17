@@ -7,31 +7,72 @@
     display: block!important;
   }
   &__slide-cover {
-    padding-top: 205px;
-    padding-bottom: 315px;
+    padding-top: 185px;
+    padding-bottom: 160px;
+    @media screen and (min-width: 600px) {
+      padding-top: 205px;
+      padding-bottom: 145px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-bottom: 315px;
+    }
   }
   &__slide-title {
-    font: $extrabold 75px / 91px 'Montserrat', sans-serif;
+    font: $extrabold 28px / 34px 'Montserrat', sans-serif;
     color: $color-white;
     text-align: center;
-    max-width: 860px;
     margin: 0 auto;
+    @media screen and (min-width: 600px) {
+      font-size: 48px;
+      line-height: 58px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 570px;
+    }
+    @media screen and (min-width: 990px) {
+      font-size: 75px;
+      line-height: 91px;
+      max-width: 860px;
+    }
   }
   &__slide-description {
-    max-width: 530px;
-    margin: 68px auto 0;
+    max-width: 300px;
+    margin: 23px auto 0;
     text-align: center;
-    font: $semibold 30px / 37px 'Montserrat', sans-serif;
+    font: $semibold 15px / 19px 'Montserrat', sans-serif;
     color: $color-white;
+    @media screen and (min-width: 480px) {
+      font-size: 17px;
+      line-height: 21px;
+    }
+    @media screen and (min-width: 600px) {
+      font-size: 22px;
+      line-height: 27px;
+      margin-top: 30px;
+      max-width: 390px;
+    }
+    @media screen and (min-width: 990px) {
+      font-size: 30px;
+      line-height: 37px;
+      max-width: 530px;
+      margin-top: 68px;
+    }
   }
   .slick-dots {
     position: absolute;
     left: 0;
-    bottom: 250px;
+    bottom: 120px;
     z-index: 10;
     width: 100%;
     margin: 0;
-    padding: 0 11px;
+    padding: 0 13px;
+    @media screen and (min-width: 600px) {
+      bottom: 75px;
+      padding: 0 11px;
+    }
+    @media screen and (min-width: 768px) {
+      bottom: 250px;
+    }
     button {
       background: rgba(0, 169, 154, 0.4);
     }

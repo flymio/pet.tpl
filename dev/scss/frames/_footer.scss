@@ -1,0 +1,204 @@
+.footer {
+  background: $color-white url(../images/bg-footer.jpg) right top no-repeat;
+  background-size: cover;
+  @media screen and (min-width: 600px) {
+    background-position: center top;
+  }
+  &__cover {
+    padding-top: 40px;
+    @media screen and (min-width: 600px) {
+      padding-top: 30px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+    }
+  }
+  &__content {
+    display: flex;
+    padding-bottom: 31px;
+    @media screen and (min-width: 600px) {
+      padding-bottom: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-bottom: 9px;
+    }
+  }
+  &__logo {
+    flex: 0 0 auto;
+    margin-bottom: 9px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 33px;
+    }
+  }
+  &__logo-icon {
+    width: 68px;
+    height: 68px;
+    fill: #353535;
+    @media screen and (min-width: 600px) {
+      width: 75px;
+      height: 75px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 153px;
+      height: 153px;
+    }
+  }
+  &__info {
+    flex: 1 1 auto;
+    padding-left: 40px;
+    @media screen and (min-width: 480px) {
+      padding-left: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-left: 127px;
+    }
+  }
+  &__nav {
+    display: none;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -37px 54px;
+    padding: 0;
+    list-style: none;
+    @media screen and (min-width: 990px) {
+      display: flex;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 38px;
+    }
+  }
+  &__nav-item {
+    flex: 0 0 auto;
+    padding: 0 37px 10px;
+    font-size: 16px;
+    line-height: normal;
+  }
+  &__nav-link {
+    color: #353535;
+    text-decoration: none;
+    display: block;
+    &:hover,
+    &:active {
+      color: $color-green;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -30px 0 0;
+  }
+  &__bar-contacts {
+    flex: 0 0 auto;
+    width: 100%;
+    padding-right: 30px;
+    &_width-50 {
+      @media screen and (min-width: 768px) {
+        width: 50%;
+      }
+    }
+  }
+  &__section-contact {
+    margin-bottom: 9px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 36px;
+    }
+  }
+  &__name-contact {
+    font-size: 15px;
+    line-height: normal;
+    color: #353535;
+    padding-bottom: 6px;
+    display: none;
+    @media screen and (min-width: 600px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+  &__contact {
+    font-size: 15px;
+    line-height: normal;
+    color: #353535;
+    @media screen and (min-width: 600px) {
+      font-size: 18px;
+    }
+    &_address {
+      font-size: 12px;
+      padding-top: 20px;
+      @media screen and (min-width: 600px) {
+        font-size: 18px;
+        padding-top: 0;
+      }
+    }
+    &_phone {
+      @media screen and (min-width: 990px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &__contact-link {
+    color: #353535;
+    text-decoration: none;
+    cursor: default;
+  }
+  &__social-list {
+    margin-right: -15px;
+    @media screen and (min-width: 600px) {
+      margin-right: -20px;
+    }
+    @media screen and (min-width: 768px) {
+      padding-top: 7px;
+    }
+  }
+  &__social-item {
+    padding-right: 15px;
+    @media screen and (min-width: 600px) {
+      padding-right: 20px;
+    }
+  }
+  &__social-icon {
+    fill: #353535;
+  }
+  .social__icon_facebook.footer__social-icon {
+    width: 17px;
+    height: 17px;
+    @media screen and (min-width: 600px) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+  .social__icon_vk.footer__social-icon {
+    width: 20px;
+    height: 11px;
+    @media screen and (min-width: 600px) {
+      width: 27px;
+      height: 15px;
+    }
+  }
+  .social__icon_instagram.footer__social-icon {
+    width: 17px;
+    height: 17px;
+    @media screen and (min-width: 600px) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+  &__copyright {
+    font-size: 17px;
+    line-height: 20px;
+    color: #808080;
+    padding-bottom: 45px;
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+}

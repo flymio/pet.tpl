@@ -1,26 +1,43 @@
 .experts {
   &__cover {
-    padding-top: 70px;
-    padding-bottom: 120px;
+    padding-top: 44px;
+    padding-bottom: 100px;
+    @media screen and (min-width: 600px) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    @media screen and (min-width: 990px) {
+      padding-bottom: 120px;
+    }
   }
   &__title {
-    margin: 0 0 43px;
+    margin: 0 0 25px;
     text-transform: uppercase;
-    font: $bold 28px $font;
+    font: $bold 21px $font;
     color: #353535;
+    @media screen and (min-width: 600px) {
+      font-size: 28px;
+      margin: 0 0 43px;
+    }
   }
   &__carousel {
     position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin: 0 -15px;
+    @media screen and (min-width: 600px) {
+      padding-left: 40px;
+      padding-right: 40px;
+      margin: 0;
+    }
   }
   &__content {
     overflow: hidden;
   }
   &__list {
     position: relative;
-    margin: 0 -15px;
     display: none;
+    @media screen and (min-width: 600px) {
+      margin: 0 -15px;
+    }
   }
   &__item {
     display: block!important;
@@ -29,30 +46,50 @@
     display: block;
     text-align: center;
     padding: 0 15px;
+    width: 250px;
     text-decoration: none;
+    @media screen and (min-width: 600px) {
+      width: auto;
+    }
   }
   &__item-img-block {
     margin: 0 auto 15px;
-    width: 180px;
+    width: 218px;
+    @media screen and (min-width: 600px) {
+      width: 180px;
+    }
   }
   &__item-img {
     max-width: none;
-    width: 180px;
-    height: 180px;
+    width: 218px;
+    height: 218px;
     border-radius: 50%;
+    @media screen and (min-width: 600px) {
+      width: 180px;
+      height: 180px;
+    }
   }
   &__item-name {
-    font: $regular 24px / 29px $font;
+    font: $regular 19px / 23px $font;
     color: $color-black;
     max-width: 200px;
-    margin: 0 auto 9px;
+    margin: 0 auto 5px;
+    @media screen and (min-width: 600px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 9px;
+    }
   }
   &__item-link:hover &__item-name {
     color: $color-green;
   }
   &__item-status {
-    font: $regular 17px $font;
-    color: $color-black;
+    font: $regular 12px $font;
+    color: #808080;
+    @media screen and (min-width: 600px) {
+      font-size: 17px;
+      color: $color-black;
+    }
   }
   .slick-dots {
     padding-top: 31px;

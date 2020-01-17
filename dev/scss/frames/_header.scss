@@ -9,27 +9,42 @@
   &__cover {
     display: flex;
     align-items: center;
-    height: 120px;
+    height: 80px;
+    @media screen and (min-width: 600px) {
+      height: 120px;
+    }
   }
   &__logo {
     flex: 0 0 auto;
   }
   &__logo-icon {
     fill: $color-white;
-    width: 75px;
-    height: 75px;
+    width: 48px;
+    height: 48px;
+    @media screen and (min-width: 600px) {
+      width: 75px;
+      height: 75px;
+    }
   }
   &__content {
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    position: relative;
-    margin-right: -48px;
+    @media screen and (min-width: 600px) {
+      position: relative;
+      margin-right: -48px;
+    }
   }
   &__nav {
     flex: 1 1 auto;
-    padding: 0 48px;
+    display: none;
+    @media screen and (min-width: 600px) {
+      padding: 0 48px;
+    }
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
   }
   &__nav-list {
     justify-content: center;
@@ -41,8 +56,14 @@
     color: $color-white;
   }
   &__social {
-    padding-right: 48px;
     flex: 0 0 auto;
+    display: none;
+    @media screen and (min-width: 600px) {
+      padding-right: 48px;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
   &__social-list {
     margin: 0 0 0 -28px;
@@ -59,7 +80,9 @@
   }
   &__sub-nav {
     flex: 0 0 auto;
-    margin-right: 48px;
+    @media screen and (min-width: 600px) {
+      margin-right: 48px;
+    }
   }
   &__sub-nav-button {
     div {
@@ -67,8 +90,14 @@
     }
   }
   &__phone {
-    margin-right: 48px;
     flex: 0 0 auto;
+    display: none;
+    @media screen and (min-width: 600px) {
+      margin-right: 48px;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
   }
   &__phone-link {
     color: $color-white;

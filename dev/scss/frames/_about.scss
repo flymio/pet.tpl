@@ -1,7 +1,11 @@
 .about {
   &__cover {
-    padding-top: 50px;
-    padding-bottom: 65px;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    @media screen and (min-width: 600px) {
+      padding-top: 50px;
+      padding-bottom: 65px;
+    }
   }
   &__carousel {
     overflow: hidden;
@@ -16,6 +20,9 @@
     padding: 0 15px;
   }
   .slick-dots {
-    padding-top: 31px;
+    padding-top: 23px;
+    @media screen and (min-width: 600px) {
+      padding-top: 31px;
+    }
   }
 }

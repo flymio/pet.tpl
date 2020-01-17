@@ -64,13 +64,16 @@
               <!-- End (social) -->
               <!-- (sub-nav) -->
               <div class="sub-nav header__sub-nav">
-                <div class="sub-nav__button header__sub-nav-button">
+                <div class="sub-nav__button header__sub-nav-button" id="pull">
                   <div></div>
                   <div></div>
                   <div></div>
                 </div>
-                <div class="sub-nav__content">
+                <div class="sub-nav__content" id="sub-nav">
                   <ul class="sub-nav__list">
+                    <li class="sub-nav__item sub-nav__item_mobile"><!-- доступен класс (active) -->
+                      <a href="#" class="sub-nav__link">О центрах</a>
+                    </li>
                     <li class="sub-nav__item"><!-- доступен класс (active) -->
                       <a href="#" class="sub-nav__link">Новости</a>
                     </li>
@@ -342,7 +345,7 @@
                       <div class="video__button"></div>
                     </div>
                     <video>
-                      <source src="video/about.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                      <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
                   </div>
                   <!-- End (video) -->
@@ -354,7 +357,7 @@
                       <div class="video__button"></div>
                     </div>
                     <video>
-                      <source src="video/about.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                      <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
                   </div>
                   <!-- End (video) -->
@@ -366,7 +369,7 @@
                       <div class="video__button"></div>
                     </div>
                     <video>
-                      <source src="video/about.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                      <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
                     </video>
                   </div>
                   <!-- End (video) -->
@@ -507,7 +510,95 @@
         <!-- End (experts) -->
       </div>
       <div class="wrapper__footer">
-        
+        <footer class="footer">
+          <div class="footer__cover cover">
+            <div class="footer__content">
+              <!-- (logo) -->
+              <div class="logo footer__logo">
+                <a href="/" class="logo__link">
+                  <svg class="logo__icon footer__logo-icon">
+                    <use xlink:href="images/icons-sprite.svg#icon-logo"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- End (logo) -->
+              <div class="footer__info">
+                <ul class="footer__nav">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">География</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">О центрах</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Наши эксперты</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Часто задаваемые вопросы</a>
+                  </li>
+                </ul>
+                <div class="footer__contacts">
+                  <div class="footer__bar-contacts footer__bar-contacts_width-50">
+                    <div class="footer__section-contact">
+                      <div class="footer__name-contact">Телефон:</div>
+                      <div class="footer__contact footer__contact_phone">
+                        <a href="tel:+74957084232" class="footer__contact-link">+7(495) 708-42-32</a>
+                      </div>
+                    </div>
+                    <div class="footer__section-contact">
+                      <div class="footer__name-contact">Почта:</div>
+                      <div class="footer__contact">
+                        <a href="mailto:welcome@medinvest-group.ru" class="footer__contact-link">welcome@medinvest-group.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer__bar-contacts footer__bar-contacts_width-50">
+                    <div class="footer__section-contact">
+                      <div class="footer__name-contact">Социальные сети:</div>
+                      <div class="footer__contact">
+                        <!-- (social) -->
+                        <div class="social footer__social">
+                          <ul class="social__list footer__social-list">
+                            <li class="social__item footer__social-item">
+                              <a href="#" class="social__link">
+                                <svg class="social__icon social__icon_facebook footer__social-icon">
+                                  <use xlink:href="images/icons-sprite.svg#icon-facebook"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li class="social__item footer__social-item">
+                              <a href="#" class="social__link">
+                                <svg class="social__icon social__icon_vk footer__social-icon">
+                                  <use xlink:href="images/icons-sprite.svg#icon-vk"></use>
+                                </svg>
+                              </a>
+                            </li>
+                            <li class="social__item footer__social-item">
+                              <a href="#" class="social__link">
+                                <svg class="social__icon social__icon_instagram footer__social-icon">
+                                  <use xlink:href="images/icons-sprite.svg#icon-instagram"></use>
+                                </svg>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- End (social) -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer__bar-contacts">
+                    <div class="footer__section-contact">
+                      <div class="footer__contact footer__contact_address">
+                        109004, Москва, ул. Александра Солженицина, дом 27
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__copyright">МедИнвестГрупп 2019 <br>При использовании материалов ссылка на сайт обязательна</div>
+          </div>
+        </footer>
       </div>
     </div>
     <!-- End (wrapper) -->
