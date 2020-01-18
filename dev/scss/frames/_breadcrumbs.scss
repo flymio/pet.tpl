@@ -1,0 +1,64 @@
+.breadcrumbs {
+  font: $regular 14px / 18px 'PT Sans', sans-serif;
+  color: $color-black;
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  &__cover {
+    padding-top: 5px;
+    @media screen and (min-width: 600px) {
+      padding-top: 32px;
+    }
+    &_search {
+      @media screen and (min-width: 600px) {
+        padding-top: 27px;
+      }
+    }
+  }
+  &__inner {
+    @media screen and (min-width: 990px) {
+      display: flex;
+      position: relative;
+      margin: 0 -30px 0 0;
+    }
+  }
+  &__inner-links {
+    @media screen and (min-width: 990px) {
+      display: flex;
+      align-items: center;
+      flex: 1 1 auto;
+      padding-right: 30px;
+    }
+  }
+  &__inner-links-list {
+    flex: 1 1 auto;
+  }
+  &__link {
+    color: $color-black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 3px 6px 3px 0;
+    &:hover,
+    &:active {
+      color: $color-green;
+    }
+  }
+  &__line,
+  &__last {
+    display: inline-block;
+    padding: 3px 6px 3px 0;
+  }
+  &__search {
+    flex: 0 0 auto;
+    padding-right: 30px;
+    position: relative;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
+    .search {
+      width: 342px;
+    }
+  }
+}

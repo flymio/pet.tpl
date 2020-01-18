@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./include/head.html');
+  </head>
+  <body>
+    <!-- (wrapper) -->
+    <div class="wrapper">
+      <div class="wrapper__content">
+        @include('./include/header.html');
+        <!-- (page-header) -->
+        <section class="page-header" style="background-image: url(images/bg-page-header-1.jpg);">
+          <div class="page-header__cover cover">
+            <h1 class="page-header__title">О центрах</h1>
+          </div>
+        </section>
+        <!-- End (page-header) -->
+        <!-- (breadcrumbs) -->
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__cover cover">
+            <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__last">О центрах</span>
+          </div>
+        </div>
+        <!-- End (breadcrumbs) -->
+        <!-- (about-content) -->
+        <section class="about-content">
+          <div class="about-content__cover cover">
+            <div class="content-nav">
+              <div class="content-nav__wrapper">
+                <ul class="content-nav__list">
+                  <li class="content-nav__item">
+                    <a href="#" class="content-nav__link">Вебинары</a>
+                  </li>
+                  <li class="content-nav__item active">
+                    <a href="#" class="content-nav__link">Тур по центру</a>
+                  </li>
+                  <li class="content-nav__item">
+                    <a href="#" class="content-nav__link">Проекты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-content__information">
+              <!-- (video) -->
+              <div class="video">
+                <div class="video__wrapper">
+                  <div class="video__button"></div>
+                </div>
+                <video>
+                  <source src="video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                </video>
+              </div>
+              <!-- End (video) -->
+            </div>
+          </div>
+        </section>
+        <!-- End (about-content) -->
+      </div>
+      <div class="wrapper__footer">
+        @include('./include/footer.html');
+      </div>
+    </div>
+    <!-- End (wrapper) -->
+    @include('./include/scripts.html');
+  </body>
+</html>

@@ -1,0 +1,19 @@
+.map {
+  height: 200px;
+  background: #EEEEEE;
+  @media screen and (min-width: 600px) {
+    height: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 990px) {
+    height: 645px;
+  }
+  .map-popup + & {
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
+  }
+}

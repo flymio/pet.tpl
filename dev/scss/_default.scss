@@ -156,12 +156,6 @@ input::-ms-clear {
   position: relative;
   margin: 0 auto;
   min-width: 320px;
-  @media screen and (min-width: 600px) {
-    max-width: 570px;
-  }
-  @media screen and (min-width: 768px) {
-    max-width: 740px;
-  }
   @media screen and (min-width: 990px) {
     max-width: 970px;
   }

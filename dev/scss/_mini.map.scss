@@ -1,0 +1,13 @@
+.mini-map {
+  height: 200px;
+  background: #EEEEEE;
+  @media screen and (min-width: 600px) {
+    height: 300px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 990px) {
+    height: 200px;
+  }
+}

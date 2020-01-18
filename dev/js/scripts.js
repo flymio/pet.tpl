@@ -138,6 +138,7 @@ $(function () {
       }
     ]
   });
+
   // Карусель экспертов
   $('#experts-list').slick({
     dots: true,
@@ -167,6 +168,39 @@ $(function () {
           slidesToShow: 1,
           arrows: false,
           dots: false,
+          variableWidth: true
+        }
+      }
+    ]
+  });
+
+  // Карусель городов
+  $('#carousel-cities').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    appendArrows: '#cities-arrows',
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
           variableWidth: true
         }
       }
