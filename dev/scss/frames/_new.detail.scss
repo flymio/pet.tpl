@@ -1,0 +1,48 @@
+.new-detail {
+  &__cover {
+    padding-top: 7px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 600px) {
+      padding-top: 25px;
+    }
+  }
+  &__info {
+    padding-bottom: 30px;
+    font: $regular 15px / 18px 'PT Sans', sans-serif;
+    @media screen and (min-width: 600px) {
+      font-size: 18px;
+      line-height: 23px;
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: 990px) {
+      padding-bottom: 60px;
+    }
+  }
+  &__title {
+    font: $bold 26px 'PT Sans', sans-serif;
+    color: #050505;
+    margin: 0 0 16px;
+    @media screen and (min-width: 600px) {
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
+  }
+  &__img {
+    margin: 0 auto 16px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: none;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 24px;
+    }
+    @media screen and (min-width: 768px) {
+      width: auto;
+      max-width: 100%;
+    }
+    @media screen and (min-width: 990px) {
+      float: right;
+      margin: 0 0 15px 35px;
+      max-width: 524px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.text-content {
+  &__cover {
+    padding-top: 15px;
+    padding-bottom: 24px;
+    @media screen and (min-width: 600px) {
+      padding-top: 25px;
+      padding-bottom: 30px;
+    }
+    @media screen and (min-width: 990px) {
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }
+}

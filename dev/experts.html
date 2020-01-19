@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./include/head.html');
+  </head>
+  <body>
+    <!-- (wrapper) -->
+    <div class="wrapper">
+      <div class="wrapper__content">
+        @include('./include/header.html');
+        <!-- (page-header) -->
+        <section class="page-header" style="background-image: url(images/bg-page-header-4.jpg);">
+          <div class="page-header__cover cover">
+            <h1 class="page-header__title">Наши эксперты</h1>
+          </div>
+        </section>
+        <!-- End (page-header) -->
+        <!-- (breadcrumbs) -->
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__cover cover breadcrumbs__cover_search">
+            <div class="breadcrumbs__inner">
+              <div class="breadcrumbs__inner-links">
+                <div class="breadcrumbs__inner-links-list">
+                  <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__last">Наши эксперты</span>
+                </div>
+              </div>
+              <div class="breadcrumbs__search">
+                <div class="search">
+                  <form action="#" name="form" method="POST">
+                    <input type="text" name="search" value="" placeholder="" class="search__input search__input_rounded">
+                    <button type="submit" name="submit" class="search__submit">
+                      <svg class="search__icon">
+                        <use xlink:href="images/icons-sprite.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End (breadcrumbs) -->
+        <!-- (list-experts) -->
+        <section class="list-experts">
+          <div class="list-experts__left-bar">
+            <div class="list-experts__nav-block">
+              <div class="list-experts__arrows" id="experts-arrow"></div>
+              <ul class="list-experts__nav">
+                <li class="list-experts__nav-item active">
+                  <a href="#" class="list-experts__nav-link">Терапевты</a>
+                </li>
+                <li class="list-experts__nav-item">
+                  <a href="#" class="list-experts__nav-link">Хирурги</a>
+                </li>
+                <li class="list-experts__nav-item">
+                  <a href="#" class="list-experts__nav-link">Оториноларингологи</a>
+                </li>
+                <li class="list-experts__nav-item">
+                  <a href="#" class="list-experts__nav-link">Окулисты</a>
+                </li>
+                <li class="list-experts__nav-item">
+                  <a href="#" class="list-experts__nav-link">Неврологи</a>
+                </li>
+                <li class="list-experts__nav-item">
+                  <a href="#" class="list-experts__nav-link">Реаниматологи</a>
+                </li>
+                <li class="list-experts__nav-item">
+                  <a href="#" class="list-experts__nav-link">Рентгенологи</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="list-experts__right-bar">
+            <div class="list-experts__slider">
+              <div class="experts-slides" id="experts-slides">
+                <div class="experts-slides__slide">
+                  <div class="experts-slides__slide-content">
+                    <div class="experts-slides__slide-header">
+                      <div class="experts-slides__slide-img-block">
+                        <img src="images/content/photo-expert.jpg" alt="Иванов Иван Иванович" class="experts-slides__slide-img">
+                      </div>
+                      <div class="experts-slides__slide-header-content">
+                        <div class="experts-slides__slide-name">Иванов Иван Иванович</div>
+                        <div class="experts-slides__slide-status">Главный врач</div>
+                      </div>
+                    </div>
+                    <div class="experts-slides__slide-description">
+                      <p>Закончил педиатрический факультет Целиноградского мединститута (1995г.), интернатура по специальности неонатология и неонатальная реанимация</p>
+                      <p>В 2015г. принимал участие в 7-ой международной конференции по пренатальной диагностике, генетике и ультразвуковой диагностике в Филадельфии (США) с прохождением мастер – класса у известных международных специалистов (hands-on)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="experts-slides__slide">
+                  <div class="experts-slides__slide-content">
+                    <div class="experts-slides__slide-header">
+                      <div class="experts-slides__slide-img-block">
+                        <img src="images/content/photo-expert.jpg" alt="Иванов Иван Иванович" class="experts-slides__slide-img">
+                      </div>
+                      <div class="experts-slides__slide-header-content">
+                        <div class="experts-slides__slide-name">Иванов Иван Иванович</div>
+                        <div class="experts-slides__slide-status">Главный врач</div>
+                      </div>
+                    </div>
+                    <div class="experts-slides__slide-description">
+                      <p>Закончил педиатрический факультет Целиноградского мединститута (1995г.), интернатура по специальности неонатология и неонатальная реанимация</p>
+                      <p>В 2015г. принимал участие в 7-ой международной конференции по пренатальной диагностике, генетике и ультразвуковой диагностике в Филадельфии (США) с прохождением мастер – класса у известных международных специалистов (hands-on)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="experts-slides__slide">
+                  <div class="experts-slides__slide-content">
+                    <div class="experts-slides__slide-header">
+                      <div class="experts-slides__slide-img-block">
+                        <img src="images/content/photo-expert.jpg" alt="Иванов Иван Иванович" class="experts-slides__slide-img">
+                      </div>
+                      <div class="experts-slides__slide-header-content">
+                        <div class="experts-slides__slide-name">Иванов Иван Иванович</div>
+                        <div class="experts-slides__slide-status">Главный врач</div>
+                      </div>
+                    </div>
+                    <div class="experts-slides__slide-description">
+                      <p>Закончил педиатрический факультет Целиноградского мединститута (1995г.), интернатура по специальности неонатология и неонатальная реанимация</p>
+                      <p>В 2015г. принимал участие в 7-ой международной конференции по пренатальной диагностике, генетике и ультразвуковой диагностике в Филадельфии (США) с прохождением мастер – класса у известных международных специалистов (hands-on)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="experts-slides__slide">
+                  <div class="experts-slides__slide-content">
+                    <div class="experts-slides__slide-header">
+                      <div class="experts-slides__slide-img-block">
+                        <img src="images/content/photo-expert.jpg" alt="Иванов Иван Иванович" class="experts-slides__slide-img">
+                      </div>
+                      <div class="experts-slides__slide-header-content">
+                        <div class="experts-slides__slide-name">Иванов Иван Иванович</div>
+                        <div class="experts-slides__slide-status">Главный врач</div>
+                      </div>
+                    </div>
+                    <div class="experts-slides__slide-description">
+                      <p>Закончил педиатрический факультет Целиноградского мединститута (1995г.), интернатура по специальности неонатология и неонатальная реанимация</p>
+                      <p>В 2015г. принимал участие в 7-ой международной конференции по пренатальной диагностике, генетике и ультразвуковой диагностике в Филадельфии (США) с прохождением мастер – класса у известных международных специалистов (hands-on)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End (list-experts) -->
+      </div>
+      <div class="wrapper__footer">
+        @include('./include/footer.html');
+      </div>
+    </div>
+    <!-- End (wrapper) -->
+    @include('./include/scripts.html');
+  </body>
+</html>

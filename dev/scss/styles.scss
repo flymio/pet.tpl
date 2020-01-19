@@ -19,6 +19,12 @@
 @import './search';
 @import './map.popup';
 @import './mini.map';
+@import './catalog.news';
+@import './experts.slides';
+@import './ahtung';
+@import './form';
+@import './form.field';
+@import './form.textarea';
 
 @import './frames/wrapper';
 @import './frames/header';
@@ -32,3 +38,7 @@
 @import './frames/breadcrumbs';
 @import './frames/about.content';
 @import './frames/map.content';
+@import './frames/list.news';
+@import './frames/new.detail';
+@import './frames/list.experts';
+@import './frames/text.content';

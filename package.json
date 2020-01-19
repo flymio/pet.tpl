@@ -30,6 +30,7 @@
     "gulp-useref": "^3.1.6"
   },
   "dependencies": {
+    "jquery.maskedinput": "^1.4.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9"

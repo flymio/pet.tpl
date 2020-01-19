@@ -29,7 +29,6 @@
       border: 1px solid #B2B2B2;
       border-radius: 50px;
       height: 42px;
-      overflow: hidden;
     }
     @media screen and (min-width: 1200px) {
       display: inline-flex;
@@ -81,12 +80,13 @@
       min-width: 230px;
       padding: 0 25px;
       text-align: center;
-      height: 40px;
+      height: 42px;
       align-items: center;
       justify-content: center;
       border-radius: 50px;
       display: flex;
       flex: 1 1 auto;
+      margin: -1px -1px 0;
     }
   }
   &__item.active &__link {

@@ -1,0 +1,141 @@
+.list-experts {
+  overflow: hidden;
+  padding-top: 11px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 600px) {
+    padding-top: 24px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 990px) {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+  &__left-bar {
+    padding: 0 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    height: 16px;
+    margin: 0 -15px;
+    @media screen and (min-width: 600px) {
+      height: 24px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 35px;
+    }
+    @media screen and (min-width: 990px) {
+      float: left;
+      width: 50%;
+      padding: 0;
+      height: auto;
+      margin: 0;
+    }
+  }
+  &__right-bar {
+    padding: 0 15px;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 990px) {
+      float: left;
+      width: 50%;
+      padding: 0;
+    }
+  }
+  &__nav-block {
+    height: 50px;
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+    @media screen and (min-width: 990px) {
+      float: right;
+      width: 470px;
+      padding-top: 60px;
+      overflow: hidden;
+      height: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 540px;
+    }
+  }
+  &__arrows {
+    width: 85px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
+    .slick-arrow {
+      top: 0;
+      margin-top: 0;
+      width: 11px;
+      height: 21px;
+    }
+  }
+  &__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    @media screen and (min-width: 990px) {
+      width: 250px;
+      border-left: 3px solid $color-green;
+      display: block;
+    }
+  }
+  &__nav-item {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding-right: 30px;
+    @media screen and (min-width: 600px) {
+      padding-right: 50px;
+    }
+    @media screen and (min-width: 990px) {
+      padding: 0;
+      white-space: normal;
+    }
+    &:first-child {
+      padding-left: 15px;
+      @media screen and (min-width: 990px) {
+        padding: 0;
+      }
+    }
+    &:last-child {
+      padding-right: 15px;
+      @media screen and (min-width: 990px) {
+        padding: 0;
+      }
+    }
+  }
+  &__nav-link {
+    color: #C4C4C4;
+    text-decoration: none;
+    display: block;
+    font: $regular 13px 'Montserrat', sans-serif;
+    @media screen and (min-width: 600px) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 990px) {
+      padding: 6px 20px;
+      font: $regular 18px $font;
+      color: $color-black;
+    }
+    &:hover,
+    &:active,
+    .active > & {
+      color: $color-green;
+    }
+  }
+  &__slider {
+    overflow: hidden;
+    position: relative;
+    @media screen and (min-width: 990px) {
+      margin-left: -220px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: -290px;
+    }
+  }
+}

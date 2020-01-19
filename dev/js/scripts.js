@@ -178,22 +178,28 @@ $(function () {
   $('#carousel-cities').slick({
     dots: false,
     arrows: true,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
     appendArrows: '#cities-arrows',
     responsive: [
       {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5
+        }
+      },
+      {
         breakpoint: 990,
         settings: {
-          slidesToShow: 3
+          slidesToShow: 4
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2
+          slidesToShow: 3
         }
       },
       {
@@ -206,4 +212,38 @@ $(function () {
       }
     ]
   });
+
+  // Слайдшоу экспертов
+  $('#experts-slides').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg><use xlink:href="images/icons-sprite.svg#icon-angle"></use></svg></button>',
+    appendArrows: '#experts-arrow',
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 990,
+        settings: {
+          arrows: false,
+          variableWidth: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          variableWidth: false,
+          dots: false,
+          infinite: false
+        }
+      }
+    ]
+  });
+
+  // Маска телефона
+  $('input[type=tel]').mask('+7 999 999 99 99');
 });
