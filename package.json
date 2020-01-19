@@ -8,7 +8,7 @@
     "dist": "SET NODE_ENV=production&&gulp",
     "notm": "SET NODE_ENV=notminify&&gulp"
   },
-  "author": "uskov ruslan",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
