@@ -19,9 +19,11 @@
     font-weight: $regular;
     color: $color-white;
     margin: 0 auto 22px;
+    font-family: $font;
     @media screen and (min-width: 600px) {
       margin: 0 auto 42px;
       max-width: 720px;
+      line-height: 29px;
     }
     @media screen and (min-width: 1200px) {
       margin-bottom: 52px;

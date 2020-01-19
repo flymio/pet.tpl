@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./include/head.html');
+  </head>
+  <body>
+    <!-- (wrapper) -->
+    <div class="wrapper">
+      <div class="wrapper__content">
+        @include('./include/header.html');
+        <!-- (page-header) -->
+        <section class="page-header" style="background-image: url(images/bg-page-header-5.jpg);">
+          <div class="page-header__cover cover">
+            <h1 class="page-header__title">Лучевая терапия</h1>
+          </div>
+        </section>
+        <!-- End (page-header) -->
+        <!-- (breadcrumbs) -->
+        <div class="breadcrumbs">
+          <div class="breadcrumbs__cover cover">
+            <div class="breadcrumbs__inner">
+              <div class="breadcrumbs__inner-links">
+                <div class="breadcrumbs__inner-links-list">
+                  <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__line">/</span><a href="#" class="breadcrumbs__link">География</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__last">Лучевая терапия</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End (breadcrumbs) -->
+        <!-- (text-content) -->
+        <section class="text-content">
+          <div class="text-content__cover cover">
+            <div class="content-nav">
+              <div class="content-nav__wrapper">
+                <ul class="content-nav__list">
+                  <li class="content-nav__item">
+                    <a href="#" class="content-nav__link">Вакансии</a>
+                  </li>
+                  <li class="content-nav__item active">
+                    <a href="#" class="content-nav__link">Профпереподготовка</a>
+                  </li>
+                  <li class="content-nav__item">
+                    <a href="#" class="content-nav__link">Учебная практика</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- (sub-ahtung) -->
+          <div class="sub-ahtung">
+            <div class="sub-ahtung__cover cover">
+              <h4 class="h4 sub-ahtung__title">Внимание выпускников и студентов медицинских ВУЗов, обучающихся (илизакончивших обучение) в ординатуре по направлению <strong>«Радиотерапия»</strong>!</h4>
+              <div class="sub-ahtung__content clearfix">
+                <div class="sub-ahtung__img-block">
+                  <div class="sub-ahtung__img-block-blur">
+                    <div class="sub-ahtung__img-block-blur-content">
+                      <img src="images/content/text-img-3.jpg" alt="Радиотерапия" class="sub-ahtung__img">
+                    </div>
+                  </div>
+                  <img src="images/content/text-img-3.jpg" alt="Радиотерапия" class="sub-ahtung__img">
+                </div>
+                <div class="sub-ahtung__text">
+                  <p>Приглашаем вас на стажировки в наши центры ядерной медицины, <strong>с возможностью дальнейшего трудоустройства</strong>.</p>
+                  <p>Также мы предлагаем возможность практикующим врачам – онкологам (детским онкологам) пройти профпереподготовку по специальности <strong>«Радиотерапия»</strong> с последующим трудоустройством в существующие и планируемые к открытию центры радиотерапии</p>
+                  <p><strong>В процессе обучения предусмотрена обязательная стажировка на базе наших центров.</strong></p>
+                  <div class="sub-ahtung__button-block">
+                    <a href="#" class="btn">Подать заявку</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End (sub-ahtung) -->
+          <!-- (form) -->
+          <div class="form form_success" id="form">
+            <div class="form__cover form__cover_success cover">
+              <div class="form__text-success">Заявка отправлена!</div>
+            </div>
+          </div>
+          <!-- End (form) -->
+        </section>
+        <!-- End (text-content) -->
+      </div>
+      <div class="wrapper__footer">
+        @include('./include/footer.html');
+      </div>
+    </div>
+    <!-- End (wrapper) -->
+    @include('./include/scripts.html');
+  </body>
+</html>
