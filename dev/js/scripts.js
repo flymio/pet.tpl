@@ -246,4 +246,14 @@ $(function () {
 
   // Маска телефона
   $('input[type=tel]').mask('+7 999 999 99 99');
+
+  // Скроллинг к месту формы
+  $('.scroll-button').on('click', function(e) {
+    e.preventDefault();
+
+    var scrollBlock = $(this).attr('href');
+    var blockPosition = $(scrollBlock).offset().top;
+
+    $('html, body').animate({scrollTop: blockPosition}, 800);
+  });
 });
