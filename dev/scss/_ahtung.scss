@@ -124,4 +124,21 @@
       margin-left: 565px;
     }
   }
+  &__arrow-block {
+    padding-bottom: 25px;
+    display: none;
+    @media screen and (min-width: 990px) {
+      display: block;
+    }
+  }
+  &__arrow {
+    display: block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-left: 3px solid $color-white;
+    border-bottom: 3px solid $color-white;
+    transform: rotate(-45deg);
+    margin: -25px auto 0;
+  }
 }

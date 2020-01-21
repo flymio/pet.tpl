@@ -1,0 +1,33 @@
+.section-cities {
+  &__cover {
+    padding-top: 22px;
+    @media screen and (min-width: 600px) {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+  }
+  &__title {
+    font: $bold 22px $font;
+    color: #353535;
+    margin: 0 0 28px;
+    @media screen and (min-width: 600px) {
+      font-size: 27px;
+      margin-bottom: 30px;
+    }
+  }
+  &__search {
+    margin-bottom: 26px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 38px;
+    }
+    @media screen and (min-width: 990px) {
+      width: 530px;
+    }
+  }
+  &_carousel-cities {
+    padding-top: 0;
+    @media screen and (min-width: 990px) {
+      padding-top: 0;
+    }
+  }
+}

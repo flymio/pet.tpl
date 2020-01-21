@@ -1,0 +1,74 @@
+.vacancies {
+  &__cover {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @media screen and (min-width: 600px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @media screen and (min-width: 990px) {
+      padding-bottom: 80px;
+    }
+  }
+  &__title {
+    font: $bold 22px $font;
+    color: #353535;
+    margin: 0 0 28px;
+    @media screen and (min-width: 600px) {
+      font-size: 27px;
+      margin-bottom: 30px;
+    }
+    &_upper {
+      text-transform: uppercase;
+    }
+  }
+  &__search {
+    margin-bottom: 35px;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 38px;
+    }
+    @media screen and (min-width: 990px) {
+      width: 530px;
+    }
+  }
+  &__button-block {
+    padding-top: 10px;
+    text-align: center;
+    @media screen and (min-width: 600px) {
+      padding-top: 20px;
+    }
+  }
+  &__button-load {
+    display: block;
+    padding: 13px 15px 11px;
+    text-align: center;
+    color: #353535;
+    border: 1px solid #9A9A9A;
+    background: $color-white;
+    border-radius: 50px;
+    font-size: 12px;
+    line-height: normal;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: $bold;
+    text-transform: uppercase;
+    @media screen and (min-width: 480px) {
+      min-width: 280px;
+      display: inline-block;
+    }
+    @media screen and (min-width: 600px) {
+      font-size: 16px;
+      padding: 16px 30px 12px;
+      min-width: 230px;
+      color: $color-green;
+      border-color: $color-green;
+    }
+    &:hover,
+    &:active {
+      color: $color-white;
+      background: $color-green;
+      border-color: $color-green;
+    }
+  }
+}

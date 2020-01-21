@@ -1,0 +1,89 @@
+.list-vacancies {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  @media screen and (min-width: 600px) {
+    margin-right: -30px;
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 auto;
+    padding: 0 0 20px 0;
+    width: 100%;
+    @media screen and (min-width: 600px) {
+      padding: 0 30px 30px 0;
+      width: 50%;
+    }
+    @media screen and (min-width: 990px) {
+      width: 25%;
+    }
+    &:nth-child(2n) {
+      @media screen and (min-width: 990px) {
+        width: 50%;
+      }
+    }
+    &:nth-child(6n) {
+      @media screen and (min-width: 990px) {
+        width: 25%;
+      }
+    }
+  }
+  &__item-link {
+    display: flex;
+    flex: 0 0 auto;
+    width: 100%;
+    background: $color-white;
+    text-decoration: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 24px 20px 15px;
+    align-content: space-between;
+    flex-wrap: wrap;
+    &:hover,
+    &:active {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__item-content {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  &__item-name {
+    font: $regular 16px $font;
+    margin: 0 0 23px;
+    color: $color-green;
+  }
+  &__item-description {
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 13px;
+    color: #353535;
+    margin: 0 0 17px;
+    p {
+      margin: 0 0 10px;
+    }
+  }
+  &__item-sub-title {
+    line-height: normal;
+    font-size: 13px;
+    color: $color-black;
+    margin: 0 0 7px;
+  }
+  &__item-footnote {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    position: relative;
+    margin-right: -20px;
+  }
+  &__item-city {
+    padding-right: 20px;
+    font-size: 11px;
+    color: #C4C4C4;
+  }
+  &__item-link-readonly {
+    padding-right: 20px;
+    font-size: 11px;
+    color: $color-green;
+  }
+}

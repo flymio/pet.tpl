@@ -1,0 +1,66 @@
+.vacancy {
+  @media screen and (min-width: 600px) {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  &__cover {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    @media screen and (min-width: 600px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @media screen and (min-width: 990px) {
+      padding-bottom: 80px;
+    }
+  }
+  &__main-title {
+    text-transform: uppercase;
+    font: $bold 22px $font;
+    color: #353535;
+    margin: 0 0 53px;
+    @media screen and (min-width: 600px) {
+      margin: 0 0 33px!important;
+      font-size: 28px;
+    }
+  }
+  &__content {
+    @media screen and (min-width: 990px) {
+      width: 600px;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    color: #353535;
+    font-family: $font;
+    @media screen and (min-width: 600px) {
+      margin: 0 0 21px;
+    }
+  }
+  p {
+    @media screen and (min-width: 600px) {
+      margin: 0 0 15px;
+    }
+  }
+  ul,
+  ol {
+    @media screen and (min-width: 600px) {
+      margin: 0 0 15px;
+    }
+  }
+  q {
+    @media screen and (min-width: 600px) {
+      margin: 0 0 15px;
+    }
+  }
+}

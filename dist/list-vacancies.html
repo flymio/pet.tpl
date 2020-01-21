@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800&display=swap&subset=cyrillic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
-    <link rel="stylesheet" href="css/normalize.css?t=1579621438926">
-    <link rel="stylesheet" href="css/slick.css?t=1579621438926">
-    <link rel="stylesheet" href="css/styles.css?t=1579621438926">
+    <link rel="stylesheet" href="css/normalize.css?t=1579621438294">
+    <link rel="stylesheet" href="css/slick.css?t=1579621438294">
+    <link rel="stylesheet" href="css/styles.css?t=1579621438294">
   </head>
   <body>
     <!-- (wrapper) -->
@@ -132,64 +132,154 @@
         <!-- (page-header) -->
         <section class="page-header" style="background-image: url(images/bg-page-header-5.jpg);">
           <div class="page-header__cover cover">
-            <h1 class="page-header__title">Центры лекарственной терапии</h1>
+            <h1 class="page-header__title">ПЭТ/КТ диагностика</h1>
           </div>
         </section>
         <!-- End (page-header) -->
         <!-- (breadcrumbs) -->
         <div class="breadcrumbs">
           <div class="breadcrumbs__cover cover">
-            <div class="breadcrumbs__inner">
-              <div class="breadcrumbs__inner-links">
-                <div class="breadcrumbs__inner-links-list">
-                  <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__line">/</span><a href="#" class="breadcrumbs__link">География</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__last">Центры лекарственной терапии</span>
-                </div>
-              </div>
-            </div>
+            <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__line">/</span><a href="#" class="breadcrumbs__link">География</a><span class="breadcrumbs__line">/</span><a href="#" class="breadcrumbs__link">ПЭТ</a><span class="breadcrumbs__line">/</span><a href="#" class="breadcrumbs__link">КТ диагностика</a><span class="breadcrumbs__line">/</span><span class="breadcrumbs__last">Вакансии</span>
           </div>
         </div>
         <!-- End (breadcrumbs) -->
         <!-- (text-content) -->
         <section class="text-content">
-          <div class="text-content__cover cover">
-            <div class="content-nav">
-              <div class="content-nav__wrapper">
-                <ul class="content-nav__list">
-                  <li class="content-nav__item">
-                    <a href="#" class="content-nav__link">Вакансии</a>
-                  </li>
-                  <li class="content-nav__item active">
-                    <a href="#" class="content-nav__link">Профпереподготовка</a>
-                  </li>
-                  <li class="content-nav__item">
-                    <a href="#" class="content-nav__link">Учебная практика</a>
-                  </li>
-                </ul>
+          <!-- (vacancies) -->
+          <div class="vacancies">
+            <div class="vacancies__cover cover">
+              <h3 class="vacancies__title vacancies__title_upper">Вакансии в Москве</h3>
+              <div class="vacancies__search">
+                <div class="search">
+                  <form action="#" name="form" method="POST">
+                    <input type="text" name="search" value="" placeholder="Название вакансии" class="search__input">
+                    <button type="submit" name="submit" class="search__submit">
+                      <svg class="search__icon">
+                        <use xlink:href="images/icons-sprite.svg#icon-search"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- (ahtung) -->
-          <div class="ahtung">
-            <div class="ahtung__cover cover">
-              <h4 class="h4 ahtung__title"><strong>Внимание выпускников и студентов медицинских ВУЗов</strong> обучающихся (или закончивших обучение) в ординатуре по направлению <strong>«Онкология»</strong>!</h4>
-              <div class="ahtung__content clearfix">
-                <div class="ahtung__img-block">
-                  <div class="ahtung__img-block-blur">
-                    <div class="ahtung__img-block-blur-content">
-                      <img src="images/content/text-img-2.jpg" alt="Онкология" class="ahtung__img">
+              <div class="list-vacancies">
+                <div class="list-vacancies__item">
+                  <a href="#" class="list-vacancies__item-link">
+                    <div class="list-vacancies__item-content">
+                      <h6 class="list-vacancies__item-name">Врач невролог детский</h6>
+                      <div class="list-vacancies__item-description">
+                        <div class="list-vacancies__item-sub-title">Обязанности</div>
+                        <p>Амбулаторный приём пациентов от 0 до 18 лет;</p>
+                        <p>Оказание квалифицированной медицинской помощи детям в области неврологии.</p>
+                      </div>
                     </div>
-                  </div>
-                  <img src="images/content/text-img-2.jpg" alt="Онкология" class="ahtung__img">
+                    <div class="list-vacancies__item-content">
+                      <div class="list-vacancies__item-footnote">
+                        <div class="list-vacancies__item-city">Москва</div>
+                        <div class="list-vacancies__item-link-readonly">Подробнее</div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div class="ahtung__text">
-                  <p>Приглашаем вас на стажировки в наши центры лекарственной терапии, <strong>с возможностью дальнейшего трудоустройства</strong>.</p>
-                  <p>Также мы предлагаем возможность практикующим врачам – терапевтам, акушерам-гинекологам, хирургам пройти профпереподготовку по специальности <strong>«Онкология»</strong> с последующим трудоустройством в существующие и планируемые к открытию центры лекарственной терапии</p>
-                  <p><strong>В процессе обучения предусмотрена обязательная стажировка на базе наших центров</strong></p>
+                <div class="list-vacancies__item">
+                  <a href="#" class="list-vacancies__item-link">
+                    <div class="list-vacancies__item-content">
+                      <h6 class="list-vacancies__item-name">Врач анестезиолог- реаниматолог</h6>
+                      <div class="list-vacancies__item-description">
+                        <div class="list-vacancies__item-sub-title">Обязанности</div>
+                        <p>Оценка физического статуса пациента в предоперационном периоде;</p>
+                        <p>Осуществление наблюдения за состоянием больных в послеоперационный период;</p>
+                        <p>Проведение лечебных мероприятий интенсивного характера реанимационным больным.</p>
+                      </div>
+                    </div>
+                    <div class="list-vacancies__item-content">
+                      <div class="list-vacancies__item-footnote">
+                        <div class="list-vacancies__item-city">Москва</div>
+                        <div class="list-vacancies__item-link-readonly">Подробнее</div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
+                <div class="list-vacancies__item">
+                  <a href="#" class="list-vacancies__item-link">
+                    <div class="list-vacancies__item-content">
+                      <h6 class="list-vacancies__item-name">Врач невролог</h6>
+                      <div class="list-vacancies__item-description">
+                        <div class="list-vacancies__item-sub-title">Обязанности</div>
+                        <p>Оказание квалифицированной помощи пациентам неврологического профиля;</p>
+                        <p>Определение необходимости в дополнительных методах исследований;</p>
+                      </div>
+                    </div>
+                    <div class="list-vacancies__item-content">
+                      <div class="list-vacancies__item-footnote">
+                        <div class="list-vacancies__item-city">Москва</div>
+                        <div class="list-vacancies__item-link-readonly">Подробнее</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="list-vacancies__item">
+                  <a href="#" class="list-vacancies__item-link">
+                    <div class="list-vacancies__item-content">
+                      <h6 class="list-vacancies__item-name">Менеджер интернет проектов</h6>
+                      <div class="list-vacancies__item-description">
+                        <div class="list-vacancies__item-sub-title">Обязанности</div>
+                        <p>Определение стратегии продвижения;</p>
+                        <p>Формирование отчетности;</p>
+                        <p>SEO-продвижение (постановка задач подрядчику, Контроль исполнения);</p>
+                        <p>Реклама в сети (РСЯ, AdWords – работа с подрядчиками).</p>
+                      </div>
+                    </div>
+                    <div class="list-vacancies__item-content">
+                      <div class="list-vacancies__item-footnote">
+                        <div class="list-vacancies__item-city">Москва</div>
+                        <div class="list-vacancies__item-link-readonly">Подробнее</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="list-vacancies__item">
+                  <a href="#" class="list-vacancies__item-link">
+                    <div class="list-vacancies__item-content">
+                      <h6 class="list-vacancies__item-name">Врач травматолог-ортопед</h6>
+                      <div class="list-vacancies__item-description">
+                        <div class="list-vacancies__item-sub-title">Обязанности</div>
+                        <p>Оказание квалифицированной помощи пациентам;</p>
+                        <p>Определение необходимости в дополнительных методах исследований;</p>
+                      </div>
+                    </div>
+                    <div class="list-vacancies__item-content">
+                      <div class="list-vacancies__item-footnote">
+                        <div class="list-vacancies__item-city">Москва</div>
+                        <div class="list-vacancies__item-link-readonly">Подробнее</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="list-vacancies__item">
+                  <a href="#" class="list-vacancies__item-link">
+                    <div class="list-vacancies__item-content">
+                      <h6 class="list-vacancies__item-name">Санитарка- буфетчица</h6>
+                      <div class="list-vacancies__item-description">
+                        <div class="list-vacancies__item-sub-title">Обязанности</div>
+                        <p>Получение на пищеблоке готовой пищи и раздача пациентам;</p>
+                        <p>Сбор грязной посуды, при необходимости проведение дезинфекционной обработки;</p>
+                      </div>
+                    </div>
+                    <div class="list-vacancies__item-content">
+                      <div class="list-vacancies__item-footnote">
+                        <div class="list-vacancies__item-city">Москва</div>
+                        <div class="list-vacancies__item-link-readonly">Подробнее</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="vacancies__button-block">
+                <a href="#" class="vacancies__button-load">Загрузить еще</a>
               </div>
             </div>
           </div>
-          <!-- End (ahtung) -->
+          <!-- End (vacancies) -->
           <!-- (form) -->
           <div class="form" id="form">
             <div class="form__cover cover">
@@ -324,9 +414,9 @@
     </div>
     <!-- End (wrapper) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/svg4everybody.js?t=1579621438926"></script>
-    <script src="js/slick.js?t=1579621438926"></script>
-    <script src="js/maskedinput.js?t=1579621438926"></script>
-    <script src="js/scripts.js?t=1579621438926"></script>
+    <script src="js/svg4everybody.js?t=1579621438294"></script>
+    <script src="js/slick.js?t=1579621438294"></script>
+    <script src="js/maskedinput.js?t=1579621438294"></script>
+    <script src="js/scripts.js?t=1579621438294"></script>
   </body>
 </html>
